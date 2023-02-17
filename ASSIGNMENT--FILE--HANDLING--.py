@@ -77,10 +77,18 @@ f.read()
 
 # Q6. Explain the write() and writelines() functions. Give a suitable example
 
-# In[14]:
+# In[4]:
 
 
 #ans:-The difference between Write() and WriteLine() method is based on new line character. Write() method displays the output but do not provide a new line character. WriteLine() method displays the output and also provides a new line character it the end of the string, This would set a new line for the next output.
+file=open("first.txt","w")
+file.write("hello")
+file.close()
+#now for writeline
+file1=open("toy. txt","w")
+lines=["welcome welcome i love you"]
+file1.writelines(lines)
+file1.close()
 
 
 # In[ ]:
